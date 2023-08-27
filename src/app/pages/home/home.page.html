@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reciclica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="tertiary">
+    <ion-item color="tertiary">
+      <ion-avatar slot="start">
+        <img src="https://cdn.discordapp.com/attachments/1067334492278235209/1145314173820084345/pas_foto_putih.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h1>Saynata</h1>
+        <p>Gathered: <span class="money">$ 15,00</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card [hasHeader]="true" [hasFooter]="true"></app-pickup-call-card>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
