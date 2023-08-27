@@ -20,11 +20,16 @@
     </ion-item>
   </ion-list>
 
-  <app-pickup-call-card [hasHeader]="true" [hasFooter]="true"></app-pickup-call-card>
+  <app-pickup-call-card status="hold" updatedAt="28/08/2023" createdAt="24/08/2023" notes="nata jajan gacoan"  >
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="tertiary" fill="clear" size="full" (click)="goToPickupCalls()" footer>See All...</ion-button>
+  </app-pickup-call-card>
   
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="tertiary">
-      <ion-icon name="add"></ion-icon>
+    <ion-fab-button color="tertiary" (click)="newPickupCall()">
+      <ion-icon name="add" ></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>

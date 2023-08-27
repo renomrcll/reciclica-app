@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pickup-call-card',
@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PickupCallCardComponent  implements OnInit {
 
-  hasHeader: boolean = true;
-  hasHeader: boolean = true;
-  hasHeader: boolean = true; 
+  @Input() hasHeader: boolean = false;
+  @Input() hasFooter: boolean = false;
 
+  @Input() status: string = '';
+  @Input() updatedAt: string = '2023-01-01 00:00:00';
+  @Input() createdAt: string = '2023-01-01 00:00:00';
+  @Input() notes: string = '';
+  @Input() value: string = '';
   constructor() { }
 
   ngOnInit() {}
